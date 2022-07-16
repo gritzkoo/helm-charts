@@ -1,7 +1,7 @@
 apiVersion: v2
 name: example
 description: A Helm chart for Kubernetes
-icon: helm-svgrepo-com.svg
+icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
 
 # A chart can be either an 'application' or a 'library' chart.
 #
