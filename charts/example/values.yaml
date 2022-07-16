@@ -1,3 +1,9 @@
+# used to define a bunch of values in global context
+global:
+  application: {}
+# used to create a namespace
+namespace: default
+
 # Default values for example.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
@@ -80,3 +86,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+environments: []
+# environments:
+#   - name: TEST
+#     value: test
