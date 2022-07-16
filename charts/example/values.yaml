@@ -91,3 +91,14 @@ environments: []
 # environments:
 #   - name: TEST
 #     value: test
+
+# to disable probes when is not the case, just override thefault value with: {}
+probes:
+  livenessProbe:
+    httpGet:
+      path: /
+      port: http
+  readinessProbe:
+    httpGet:
+      path: /
+      port: http
