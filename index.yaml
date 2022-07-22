@@ -1,11 +1,35 @@
 apiVersion: v1
 entries:
+  cluster-bootstrap:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-22T10:24:01.43133516Z"
+    dependencies:
+    - name: base
+      repository: https://istio-release.storage.googleapis.com/charts
+      version: 1.14.1
+    - name: gateway
+      repository: https://istio-release.storage.googleapis.com/charts
+      version: 1.14.1
+    - name: istiod
+      repository: https://istio-release.storage.googleapis.com/charts
+      version: 1.14.1
+    - name: sealed-secrets
+      repository: https://bitnami-labs.github.io/sealed-secrets
+      version: 2.4.0
+    description: A Helm chart for Kubernetes
+    digest: 2538e74088116fbc18ca839bc35ecdf84c7262db4da0c3185631026c763c822f
+    name: cluster-bootstrap
+    type: application
+    urls:
+    - https://gritzkoo.github.io/helm-charts/cluster-bootstrap-0.1.0.tgz
+    version: 0.1.0
   example:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-16T01:43:21.459052539Z"
+    created: "2022-07-22T10:24:01.432553276Z"
     description: A Helm chart for Kubernetes
-    digest: 15f4c4f491c88f877cbfd388b038108064081301ac96253b120e4e96c14e6a19
+    digest: 1f8d2ef61fe9065cb8e9aa10c56f133d7121c1465f4811ca9c5b370fe3549ccc
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
     name: example
     type: application
@@ -36,12 +60,12 @@ entries:
   other:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-16T01:43:21.459630447Z"
+    created: "2022-07-22T10:24:01.433527288Z"
     description: A Helm chart for Kubernetes
-    digest: 7916bf3bfc6ff3a108f244091f18e00375fb720374e640369a79af1856bd49bb
+    digest: 5dc4ad56f81fc8ef5eaf7eef6afb035b89eae46b187cb9d5a14beaff3e922ed0
     name: other
     type: application
     urls:
     - https://gritzkoo.github.io/helm-charts/other-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-16T01:43:21.457899622Z"
+generated: "2022-07-22T10:24:01.423380257Z"
