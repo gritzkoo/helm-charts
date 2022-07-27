@@ -1,0 +1,18 @@
+name: releaser
+on:
+  release:
+  workflow_dispatch:
+
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout artifacts branch
+        uses: actions/checkout@v3
+        with:
+          ref: artifacts
+        run: |
+          gh release list | aws '{print$1}' | while read line; do gh release download $line || true; done
+          git add .
+          git commit -m ":robot: [github actions actor] update artifact list"
+          git push
