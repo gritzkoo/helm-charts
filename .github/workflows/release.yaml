@@ -1,6 +1,7 @@
 name: releaser
 on:
   release:
+    types: [published]
   workflow_dispatch:
 
 jobs:
@@ -22,3 +23,27 @@ jobs:
           git add .
           git commit -m ":robot: [github actions actor] update artifact list"
           git push
+  index:
+    name: index-update
+    runs-on: ubuntu-latest
+    steps:
+      - name: chekcout gh-pages
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+      - name: git setup
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
+      - name: update index.yaml links
+        run: |
+          sed -E -i "s|https\:\/\/github\.com\/gritzkoo\/helm\-charts\/releases\/download\/[A-Z_a-z.0-9-]+\/|https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/|g"  index.yaml
+          if [[ $(git diff) ]];
+          then
+            git add index.yaml
+            git commit -m "[ci skip] :robot: [github actions actor] - update index.yaml"
+            git push
+          else
+            echo "nothing to do!!!"
+          fi
