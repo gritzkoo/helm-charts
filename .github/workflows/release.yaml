@@ -23,6 +23,19 @@ jobs:
           git add .
           git commit -m ":robot: [github actions actor] update artifact list"
           git push
+      - name: Install Helm
+        uses: azure/setup-helm@v1
+        with:
+          version: v3.8.1
+      - name: generate updated index.yaml
+        run: |
+          helm repo index . --url "https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/"
+      - name: persist index.yaml
+        uses: actions/upload-artifact@v2
+        with:
+          name: gh-pages
+          path: ./index.yaml
+          if-no-files-found: error
   index:
     name: index-update
     runs-on: ubuntu-latest
@@ -36,9 +49,11 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
-      - name: update index.yaml links
+      - uses: actions/download-artifact@v2
+        with:
+          name: gh-pages
+      - name: commit new index.yaml
         run: |
-          sed -E -i "s|https\:\/\/github\.com\/gritzkoo\/helm\-charts\/releases\/download\/[A-Z_a-z.0-9-]+\/|https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/|g"  index.yaml
           if [[ $(git diff) ]];
           then
             git add index.yaml
@@ -47,3 +62,14 @@ jobs:
           else
             echo "nothing to do!!!"
           fi
+      # - name: update index.yaml links
+      #   run: |
+      #     sed -E -i "s|https\:\/\/github\.com\/gritzkoo\/helm\-charts\/releases\/download\/[A-Z_a-z.0-9-]+\/|https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/|g"  index.yaml
+      #     if [[ $(git diff) ]];
+      #     then
+      #       git add index.yaml
+      #       git commit -m "[ci skip] :robot: [github actions actor] - update index.yaml"
+      #       git push
+      #     else
+      #       echo "nothing to do!!!"
+      #     fi
