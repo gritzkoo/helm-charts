@@ -1,13 +1,6 @@
-name: releaser
+name: manually update artifacts
 on:
-  release:
-    types:
-      - published
-      - created
-      - edited
-      - released
   workflow_dispatch:
-
 jobs:
   artifacts:
     runs-on: ubuntu-latest
