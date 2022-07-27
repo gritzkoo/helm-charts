@@ -3,7 +3,7 @@ global:
   application: {}
 # used to create a namespace
 namespace: default
-other: valuessdfsdf
+other: valuessdfsdfsdfs
 
 # Default values for example.
 # This is a YAML-formatted file.
