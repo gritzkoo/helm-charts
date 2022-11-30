@@ -23,10 +23,12 @@ jobs:
         run: |
           if [[ $(git status -s) ]];
           then
+            git config user.name "$GITHUB_ACTOR"
+            git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+            echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
             git add -u
             git commit -m ":robot: [github actions actor] - docs updated"
             git push
-            echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
             gh run cancel $GITHUB_RUN_ID
           else
             echo "nothing to do!!!"
