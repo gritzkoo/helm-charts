@@ -19,7 +19,7 @@ A Helm chart for Kubernetes
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"nginx"` |  |
 | image.tag | string | `""` |  |
-| imagePullSecrets | list | `[]` | testing sdfsd sdfsdfsdf |
+| imagePullSecrets | list | `[]` | testing sdfsd sdfsdfsdf ssfffsadafsasfd sdfsdfsdfsdf |
 | ingress.annotations | object | `{}` |  |
 | ingress.className | string | `""` |  |
 | ingress.enabled | bool | `false` |  |
