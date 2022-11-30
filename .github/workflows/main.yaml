@@ -66,6 +66,16 @@ jobs:
         run: |
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - name: Generate Helm Docs
+        uses: docker://jnorwood/helm-docs:v1.7.0
+        with:
+          entrypoint: /usr/bin/helm-docs
+          args: --chart-search-root /github/workspace
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4.13.1
+        with:
+          commit_message: "[ci skip] :robot: Update Docs :zap:"
+          repository: .
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@main
         env:
