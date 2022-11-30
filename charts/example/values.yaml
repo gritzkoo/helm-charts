@@ -16,7 +16,7 @@ image:
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
-# --testing sdfsd sdfsdfsdf
+# --testing sdfsd sdfsdfsdf ssfffsadafsasfd
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
