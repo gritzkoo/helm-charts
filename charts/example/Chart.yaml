@@ -1,6 +1,6 @@
 apiVersion: v2
 name: example
 type: application
-version: 0.1.6
+version: 0.1.7
 icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
 description: A Helm chart for Kubernetes
