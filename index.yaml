@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   example:
   - apiVersion: v2
+    created: "2022-11-30T13:33:26.503979996Z"
+    description: A Helm chart for Kubernetes
+    digest: 0adbcc916097fd9ab2a641c2779d59a9affb117f0c9a7753e8fa43ff14f475cb
+    icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
+    name: example
+    type: application
+    urls:
+    - https://github.com/gritzkoo/helm-charts/releases/download/example-0.1.9/example-0.1.9.tgz
+    version: 0.1.9
+  - apiVersion: v2
     created: "2022-11-30T13:19:01.081905508Z"
     description: A Helm chart for Kubernetes
     digest: a46c8ce7425fb978ac4a785f7c3a06f6d525c195247b9ea0d1f6d500ebfdb1b4
@@ -97,4 +107,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-30T13:19:01.074866698Z"
+generated: "2022-11-30T13:33:26.504186904Z"
