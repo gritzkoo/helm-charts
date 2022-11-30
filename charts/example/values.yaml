@@ -22,7 +22,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 serviceAccount:
-  # Specifies whether a service account should be created and need to be
+  # --Specifies whether a service account should be created and need to be new try to generate new docs
   create: true
   # Annotations to add to the service account
   annotations: {}
