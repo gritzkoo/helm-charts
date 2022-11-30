@@ -72,10 +72,15 @@ jobs:
           entrypoint: /usr/bin/helm-docs
           args: --chart-search-root /github/workspace
       - name: commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4.13.1
-        with:
-          commit_message: "[ci skip] :robot: Update Docs :zap:"
-          repository: .
+        run: |
+          if [[ $(git diff) ]];
+          then
+            git add .
+            git commit -m "[ci skip] :robot: [github actions actor] - update docs :zap:"
+            git push
+          else
+            echo "nothing to do!!!"
+          fi
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@main
         env:
