@@ -20,16 +20,18 @@ jobs:
           entrypoint: /usr/bin/helm-docs
           args: --chart-search-root /github/workspace
       - name: commit changes
-        id: commiter1
+        id: docs_updater
         uses: stefanzweifel/git-auto-commit-action@v4.15.4
         with:
-          commit_options: "default"
           commit_message: ":robot: Update Docs :zap:"
           repository: .
       - name: "Run if changes have been detected"
-        if: steps.commiter1.outputs.changes_detected == 'true'
+        if: steps.docs_updater.outputs.changes_detected == 'true'
         run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
           echo "New docs was created. This workflow will be canceled to start a new one! Please take a time!"
+          gh workflow run main
+          gh run cancel $GITHUB_RUN_ID
           exit 1
 
   # lint-chart:
