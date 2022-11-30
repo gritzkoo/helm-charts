@@ -22,7 +22,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 serviceAccount:
-  # Specifies whether a service account should be created
+  # Specifies whether a service account should be created and need to be tested
   create: true
   # Annotations to add to the service account
   annotations: {}
