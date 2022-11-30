@@ -43,7 +43,7 @@ A Helm chart for Kubernetes
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` |  |
-| serviceAccount.create | bool | `true` |  |
+| serviceAccount.create | bool | `true` | Specifies whether a service account should be created and need to be new try to generate new docs |
 | serviceAccount.name | string | `""` |  |
 | tolerations | list | `[]` |  |
 
