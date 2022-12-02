@@ -1,0 +1,7 @@
+.deploy
+kubeval
+charts/**/tmp.yaml
+charts/**/results.yaml
+charts/**/test.yaml
+charts/**/Chart.lock
+charts/**/*.tgz
