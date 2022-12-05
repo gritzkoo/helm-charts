@@ -1,6 +1,6 @@
 # example
 
-![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.10](https://img.shields.io/badge/Version-0.1.10-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for Kubernetes
 
@@ -31,7 +31,7 @@ A Helm chart for Kubernetes
 | namespace | string | `"default"` |  |
 | nodeSelector | object | `{}` |  |
 | other | string | `"valuessdfsdfsdfssdfsdf"` |  |
-| podAnnotations | object | `{}` |  |
+| podAnnotations | object | `{}` | podAnnotations docs |
 | podSecurityContext | object | `{}` |  |
 | probes.livenessProbe.httpGet.path | string | `"/"` |  |
 | probes.livenessProbe.httpGet.port | string | `"http"` |  |
