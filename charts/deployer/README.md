@@ -1,6 +1,6 @@
-# example
+# deployer
 
-![Version: 0.1.11](https://img.shields.io/badge/Version-0.1.11-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.16.0](https://img.shields.io/badge/AppVersion-1.16.0-informational?style=flat-square)
 
 A Helm chart for Kubernetes
 
@@ -13,9 +13,7 @@ A Helm chart for Kubernetes
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
-| environments | list | `[]` |  |
 | fullnameOverride | string | `""` |  |
-| global.application | object | `{}` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"nginx"` |  |
 | image.tag | string | `""` |  |
@@ -28,22 +26,16 @@ A Helm chart for Kubernetes
 | ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` |  |
 | ingress.tls | list | `[]` |  |
 | nameOverride | string | `""` |  |
-| namespace | string | `"default"` |  |
 | nodeSelector | object | `{}` |  |
-| other | string | `"valuessdfsdfsdfssdfsdf"` |  |
-| podAnnotations | object | `{}` | podAnnotations docs |
+| podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
-| probes.livenessProbe.httpGet.path | string | `"/"` |  |
-| probes.livenessProbe.httpGet.port | string | `"http"` |  |
-| probes.readinessProbe.httpGet.path | string | `"/"` |  |
-| probes.readinessProbe.httpGet.port | string | `"http"` |  |
 | replicaCount | int | `1` |  |
 | resources | object | `{}` |  |
-| securityContext | object | `{}` | set pod security context |
+| securityContext | object | `{}` |  |
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` |  |
-| serviceAccount.create | bool | `true` | Specifies whether a service account should be created and need to be new try to generate new docs |
+| serviceAccount.create | bool | `true` |  |
 | serviceAccount.name | string | `""` |  |
 | tolerations | list | `[]` |  |
 
