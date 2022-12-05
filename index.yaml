@@ -3,27 +3,27 @@ entries:
   deployer:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:27:15.702328983Z"
+    created: "2022-12-05T14:27:35.801258107Z"
     description: A Helm chart for Kubernetes
     digest: db4bd31f905aa00ce03f85cd71824bc7372a8fb089126db92d022c74002d6fe1
     name: deployer
     type: application
     urls:
-    - https://github.com/gritzkoo/helm-charts/releases/download/deployer-0.1.0/deployer-0.1.0.tgz
+    - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/deployer-0.1.0.tgz
     version: 0.1.0
   example:
   - apiVersion: v2
-    created: "2022-12-05T14:27:15.837034123Z"
+    created: "2022-12-05T14:27:35.803957245Z"
     description: A Helm chart for Kubernetes
     digest: 740a5cfdacbf1b176f09b58e46148413d2f741d9fc9f8e6445e4fa48e21bc081
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
     name: example
     type: application
     urls:
-    - https://github.com/gritzkoo/helm-charts/releases/download/example-0.1.11/example-0.1.11.tgz
+    - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/example-0.1.11.tgz
     version: 0.1.11
   - apiVersion: v2
-    created: "2022-12-05T14:21:19.593993332Z"
+    created: "2022-12-05T14:27:35.803273435Z"
     description: A Helm chart for Kubernetes
     digest: 7aab6e9fc543b3c239fa2377750509dd6393e459c02ef2f682c6e85aa85065c2
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -33,7 +33,7 @@ entries:
     - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/example-0.1.10.tgz
     version: 0.1.10
   - apiVersion: v2
-    created: "2022-12-05T14:21:19.599202473Z"
+    created: "2022-12-05T14:27:35.809801327Z"
     description: A Helm chart for Kubernetes
     digest: 0adbcc916097fd9ab2a641c2779d59a9affb117f0c9a7753e8fa43ff14f475cb
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -43,7 +43,7 @@ entries:
     - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/example-0.1.9.tgz
     version: 0.1.9
   - apiVersion: v2
-    created: "2022-12-05T14:21:19.598578468Z"
+    created: "2022-12-05T14:27:35.808832813Z"
     description: A Helm chart for Kubernetes
     digest: a46c8ce7425fb978ac4a785f7c3a06f6d525c195247b9ea0d1f6d500ebfdb1b4
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -53,7 +53,7 @@ entries:
     - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/example-0.1.8.tgz
     version: 0.1.8
   - apiVersion: v2
-    created: "2022-12-05T14:21:19.597923163Z"
+    created: "2022-12-05T14:27:35.807751398Z"
     description: A Helm chart for Kubernetes
     digest: 4525eb01fd5cff3f887010528b79ae262358ed8bfa4ef925a32e97b2709a15b4
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -63,7 +63,7 @@ entries:
     - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/example-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
-    created: "2022-12-05T14:21:19.597270358Z"
+    created: "2022-12-05T14:27:35.807093289Z"
     description: A Helm chart for Kubernetes
     digest: 34d734c27b6e31a0b06c44c4dbd58b90797af383df993938e592ae22d30ad6d2
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -74,7 +74,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:21:19.596636553Z"
+    created: "2022-12-05T14:27:35.80644978Z"
     description: A Helm chart for Kubernetes
     digest: a1e80821bc074bb5b9a093a745776a3dbbabd4af3aab7b5f402709bd09299dc1
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -85,7 +85,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:21:19.596007248Z"
+    created: "2022-12-05T14:27:35.805839671Z"
     description: A Helm chart for Kubernetes
     digest: d22e91e86ee130e64d0227a82c04e986cba169005fad976a5fa7d870eaf500d6
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -96,7 +96,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:21:19.595383443Z"
+    created: "2022-12-05T14:27:35.805193662Z"
     description: A Helm chart for Kubernetes
     digest: cff5285ce32e2b2978f4446f58454a5e4be42ff5b1cc0c482bf446f8057acef8
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -107,7 +107,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:21:19.594727038Z"
+    created: "2022-12-05T14:27:35.804577254Z"
     description: A Helm chart for Kubernetes
     digest: 55353156339d618f94f333661f8a7da1696b9a6b583e45d605408314aa2a512e
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -118,7 +118,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:21:19.593245426Z"
+    created: "2022-12-05T14:27:35.802584025Z"
     description: A Helm chart for Kubernetes
     digest: beb86a41c9a871dbfdc87e77ed36747e36f2dc071614e2fa836a3c5f97657e6a
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -129,7 +129,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:21:19.592507721Z"
+    created: "2022-12-05T14:27:35.801933516Z"
     description: A Helm chart for Kubernetes
     digest: 7b297f9964219c8c2a91b5a9c2f99450a2279ee40a93ddeb9258eeafe7086727
     icon: https://github.com/gritzkoo/helm-charts/blob/main/charts/example/helm-svgrepo-com.svg
@@ -141,12 +141,12 @@ entries:
   tooling:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-05T14:27:15.956705071Z"
+    created: "2022-12-05T14:27:35.810275434Z"
     description: A Helm chart for Kubernetes
     digest: 2e0b218bcd71a0b60a6eb746bbdd9f36e6ffb3b27cf2a3ef2a1e2c46826ad335
     name: tooling
     type: application
     urls:
-    - https://github.com/gritzkoo/helm-charts/releases/download/tooling-0.1.0/tooling-0.1.0.tgz
+    - https://raw.githubusercontent.com/gritzkoo/helm-charts/artifacts/tooling-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-05T14:27:15.956749871Z"
+generated: "2022-12-05T14:27:35.796962046Z"
